@@ -4,7 +4,7 @@ This program checks if the file extension matches the hex file signature for eac
 The program works by checking for each file in a given folder whether the extension of the file matches with the expected hex file signature(s) within a Python dictionary that contains the file extensions as keys and the lists of possible file signatures as values.
 
 To use:
-1. Run the program file_signatures.py.
+1. Open the Python file file_signatures.py in your IDE (I used PyCharm) and run it (without any parameters).
 2. A window should appear allowing you to choose a folder from your computer. Choose the folder containing the files that you would like to check for masquerading.
 3. The program will print the paths of the files which may potentially be masqueraded based on a mismatch between actual extension and expected file signature.
 4. The program will take into account the fact that some file extensions, such as a .txt, do not always have an associated file signature.
