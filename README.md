@@ -11,3 +11,5 @@ To use:
 5. After printing out the file paths of all potentially masqueraded files from the selected folder, the program will print the total number of potentially masqueraded fles.
 
 Please note that although the dictionary within the program contains a large number of common and rare file types, it is not an entirely comprehensive list. If the program encounters an unincluded file extension, it will output that file's path along with a message saying that this file extension was not found.
+
+This repository was created as a requirement of CIS 442 (Fall 2023) at UMass Dartmouth.
