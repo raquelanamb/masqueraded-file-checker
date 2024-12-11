@@ -1,4 +1,4 @@
-# masqueraded-file-checker
+# Masqueraded-File-Checker
 This program checks if the file extension matches the hex file signature for each file within a given folder.
 
 The program works by checking for each file in a given folder whether the extension of the file matches with the expected hex file signature(s) within a Python dictionary that contains the file extensions as keys and the lists of possible file signatures as values.
