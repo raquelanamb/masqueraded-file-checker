@@ -80,7 +80,7 @@ def is_file_masqueraded(file_path):
     elif file_extension == "":
         return
     else:
-        print("The file extension" + file_extension + " was not found.")
+        print("The file extension " + file_extension + " was not found.")
     # masqueraded if went through all expected sigs & none matched actual sig:
     return True
 
