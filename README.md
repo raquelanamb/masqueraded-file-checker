@@ -53,25 +53,25 @@ python file_signatures.py
 
 ## Example Output
 
-### If a folder with potentially masqueraded files is selected:
-The following file(s) may be masqueraded:
+### - If a folder with potentially masqueraded files is selected:
+        The following file(s) may be masqueraded:
 
-/Users/Raquel/Documents/suspicious.exe
-(The file extension ".exe" does not match the expected hex signature.)
+        /Users/Raquel/Documents/suspicious.exe
+        (The file extension ".exe" does not match the expected hex signature.)
 
-/Users/Raquel/Documents/note.txt
-(.txt files have no hex signature necessarily associated with them.)
-
-2 potentially masqueraded files were found.
+        /Users/Raquel/Documents/note.txt
+        (.txt files have no hex signature necessarily associated with them.)
+        
+        2 potentially masqueraded files were found.
 
 
 
 ### - If no masqueraded files are found:
 
-No masqueraded files were found.
+        No masqueraded files were found.
 
 
 
 ### - If no folder is selected:
 
-You did not select a file.
+        You did not select a file.
