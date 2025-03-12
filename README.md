@@ -65,12 +65,12 @@ The following file(s) may be masqueraded:
 
 
 
-### If no masqueraded files are found:
+### - If no masqueraded files are found:
 
 No masqueraded files were found.
 
 
 
-### If no folder is selected:
+### - If no folder is selected:
 
 You did not select a file.
