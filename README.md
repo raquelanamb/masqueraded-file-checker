@@ -53,6 +53,7 @@ python file_signatures.py
 
 ## Example Output
 
+### If a folder with potentially masqueraded files is selected:
 The following file(s) may be masqueraded:
 
 /Users/Raquel/Documents/suspicious.exe
@@ -63,7 +64,7 @@ The following file(s) may be masqueraded:
 
 2 potentially masqueraded files were found.
 
----
+
 
 ### - If no masqueraded files are found:
 
