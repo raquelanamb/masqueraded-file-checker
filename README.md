@@ -1,15 +1,73 @@
-# masqueraded-file-checker
-This program checks if the file extension matches the hex file signature for each file within a given folder.
+# Masqueraded File Checker
 
-The program works by checking for each file in a given folder whether the extension of the file matches with the expected hex file signature(s) within a Python dictionary that contains the file extensions as keys and the lists of possible file signatures as values.
+## Overview
+The **Masqueraded File Checker** is a Python-based tool that detects files whose **extensions do not match their expected hex file signatures**. This can help identify **potentially masqueraded files**, which may be used to disguise malicious content or mislead users about a file’s true format.
 
-To use:
-1. Open the Python file file_signatures.py in your IDE (I used PyCharm) and run it (without any parameters).
-2. A window should appear allowing you to choose a folder from your computer. Choose the folder containing the files that you would like to check for masquerading.
-3. The program will print the paths of the files which may potentially be masqueraded based on a mismatch between actual extension and expected file signature.
-4. The program will take into account the fact that some file extensions, such as a .txt, do not always have an associated file signature.
-5. After printing out the file paths of all potentially masqueraded files from the selected folder, the program will print the total number of potentially masqueraded fles.
+The program works by analyzing each file in a selected folder and comparing its **actual binary signature** against a **predefined dictionary of expected signatures** for known file types.
 
-Please note that although the dictionary within the program contains a large number of common and rare file types, it is not an entirely comprehensive list. If the program encounters an unincluded file extension, it will output that file's path along with a message saying that this file extension was not found.
+---
 
-This repository was created as a requirement of CIS 442 (Fall 2023) at UMass Dartmouth.
+## Features
+- **Automatic File Scanning**: Checks every file within a selected folder for extension mismatches.
+- **Signature-Based Analysis**: Uses a comprehensive dictionary of **hex signatures** for common file formats.
+- **Batch Processing**: Analyzes multiple files simultaneously.
+- **GUI-Based Folder Selection**: Uses Tkinter’s file dialog to allow easy folder selection.
+- **Detailed Reporting**:
+  - Displays all **potentially masqueraded files** with their file paths.
+  - Identifies file types **without standard signatures**.
+  - Outputs a **summary count** of suspicious files found.
+
+---
+
+## Installation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/raquelanamb/masqueraded-file-checker.git
+cd masqueraded-file-checker
+```
+
+### 2. Install Dependencies
+This script relies on Python's Tkinter library, which is included in most standard installations. If missing, install it manually:
+
+Linux:
+```
+sudo apt install python3-tk
+```
+
+Windows/macOS:
+Tkinter is pre-installed with Python, so no additional installation is required.
+
+
+## Usage
+
+1. Open the file_signatures.py script in your IDE (e.g., PyCharm) or run it from the terminal:
+```
+python file_signatures.py
+```
+2. A file selection window will appear. Choose the folder containing the files you want to check.
+3. The program will analyze the files and display:
+   - A list of files that may be masqueraded based on extension/signature mismatches.
+   - A message noting files without standard signatures.
+   - A final count of potentially suspicious files.
+
+
+## Example Output
+
+The following file(s) may be masqueraded:
+
+/Users/Raquel/Documents/suspicious.exe
+(The file extension ".exe" does not match the expected hex signature.)
+
+/Users/Raquel/Documents/note.txt
+(.txt files have no hex signature necessarily associated with them.)
+
+2 potentially masqueraded files were found.
+
+
+### If no masqueraded files are found:
+
+No masqueraded files were found.
+
+### If no folder is selected:
+
+You did not select a file.
