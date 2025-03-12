@@ -63,7 +63,7 @@ The following file(s) may be masqueraded:
 
 2 potentially masqueraded files were found.
 
-
+---
 
 ### - If no masqueraded files are found:
 
